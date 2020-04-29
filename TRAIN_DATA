@@ -1,0 +1,56 @@
+An example behavioral pattern that we can analyze are all the flows sent by the zbot to the destination port 8033 using the UDP protocol. 
+We also noted that the zbot started a server listening on ports 1548 and 3492. 
+When the malware successfully contacts a live C2 server, the Zeus malware sends RSA-encrypted data using a request on TCP port 80 (see Figure 2).
+After terdot sent queries, it is followed by connections to that host via TCP port 443 
+The Tor utility maintained by Zeus under the cover of the svchost.exe process creates an HTTP proxy server listening to the TCP port 9050.
+They reach your machine where tor.exe maintained by Zeus accepts a connection on port 80 and redirects it to port 1080 on the local machine which is listened to by the web server.
+Zeus was listening on TCP port 9050 that is the Tor port, there were some active network Tor connections and Opera was causing a massive flooding of TCP connections.
+Zeus uses port 80(HTTP) for all its communication between the victim's system and the C2 server.
+In order to view the contents, the web browser (in this case, Firefox) connects to localhost on port 2222 (entry 2 and 3). The connection is received by the explorer.exe process (because it is where ZeuS injected its worker threads).
+Zeus listens on TCP port 80 for incoming connections and simply relays data receives to another server that hosts the actual phishing pages and malware files.
+Our machine infected by Zeus was making connections with an ipv4 by the 80/tcp port. 
+The attacks associated with the new botnet attempted to exploit the CVE-2017-17215 zero-day vulnerability in the Huawei home router caused by the fact that the TR-064 technical report standard, which was designed for local network configuration, was exposed to WAN through port 37215 (UPnP – Universal Plug and Play).
+About 12 hours ago (2017-12-05 11:57 AM GMT+8), we noticed a new version of Satori (a mirai variant which we named Satori), starting to propagate very quickly on port 37215 and 52869.
+Two new exploits, which work on port 37215 and 52869 have been added, see below for more details.
+Due to the worm like behavior, we all should be on the lookout for the port 37215 and 52869 scan traffic.
+For those who don’t have the visibility, feel free to check out our free Scanmon system for port 37215 and 52869, or ISC port pages for 37215 and 52869.
+As can be seen from the following picture, the bot will scan port 37215 and 52869 randomly, determined by the remainder of a random integer mod 3.
+During the scanning, Satori will utilize two different exploits, one on port 37215, while the other on 52869.
+The one on port 37215 is not fully disclosed yet, our team has been tracking this in the last few days and got quite some insight, but we will not discuss it here right now.(stay tuned for our update later).
+For example, during last recent 12 hours we have seen 263,250 different IPs scanning port 37215, and 19,403 IPs scanning port 52869.
+The scanner process runs continuously on each mirai BOT using the telnet protocol (on TCP port 23 or 2323) to try and login to IP addresses at random. 
+To infect these devices Mirai chooses random IPs and attempts to use default administrative credentials to take over the device via ports 7547 and 5555 
+These ports are: port 53413 related to Netis Routers, port 37215 related to Huawei HG532 routers, port 52869 UPnP SOAP service from a Realtek SDK, and port 81 for CCTV-DVR cameras. 
+In the subsequent seven consecutive days, the system received the same attack payload sent from multiple infected IP addresses. The attack targeted TCP port 5555. 
+ADB.Mirai spreads via the ADB port of Android devices, and this sample randomly generates 359 IP addresses and scans port 5555 on these addresses to seek for exploitable targets. 
+ADB.Mirai spreads via the ADB port of Android devices. This sample randomly generates 359 IP addresses and scans port 5555 on these addresses to seek for exploitable targets. 
+Affected routers use protocols that leave port 7547 open, which allows for exploitation of the router. 
+Monitor Internet Protocol (IP) port 2323/TCP and port 23/TCP for attempts to gain unauthorized control over IoT devices using the network terminal (Telnet) protocol by Mirai
+Mirai spread by first entering a quick scanning stage where it proliferates by haphazardly sending TCP SYN probes to pseudo-random IPv4 addresses, on Telnet TCP ports 23 and 2323.
+So as to strengthen itself, Mirai also terminates different services which are bound to TCP/22 or TCP/23, including other Mirai variations. 
+The destination port numbers of scanning packets are distributed as ∼90% port 23 and ∼10% port 2323 for Mirai.
+Satori, the new variant of Mirai is different from all previous variants as it does not use a Telnet port scanner instead it will scan TCP ports 37215 and 52869 on random IP addresses. 
+The Satori attack is employed with two new exploits which is targeting TCP ports 37215 and 52869.
+One of the exploit by Satori works on TCP port 52869 of IoT devices/routers.
+The bug leaves the router's TCP port 7547 exposed to the internet.
+ISPs should restrict access to ports 7547 (and 5555) accordingly in order to protect routers from exploits against unpatched vulnerabilities by Mirai.
+When a router is infected by the new Mirai variant it closes port 7547 and disables telnet as well, making it very difficult for ISPs to apply patches remotely.
+We see that on September 13, 2016, port 2323 (TCP), an alternate port for Telnet, began showing up in our top five most-scanned ports. Port 23 (TCP), the standard port for Telnet, often shows up in the top five. Both ports are associated with the Mirai botnet, which scans them looking for vulnerable IoT devices.
+ukashi takes advantage of a vulnerability (CVE-2020-9054) in Zyxel NAS devices running firmware version 5.21 that allows remote attackers to execute code – and according to researchers at Palo Alto Networks, cyber criminals are actively attempting to exploit the attack in the wild.
+The operators of this new botnet are expanding their internet of things network by taking advantage of a vulnerability identified in February and designated as CVE-2020-9054, which affects Zyxel NAS devices using older instances of the company's firmware up to version 5.21.
+We also reported on the use of the CVE-2015-2051 and CCTV-DVR RCE exploits by the Gafgyt variant Hakai and the Mirai variant Yowai, respectively, and detailed how both malware variants also used the ThinkPHP RCE exploit.
+These two Mirai exploits, however, were used in a more recent attack, which also included four others on the list: the CVE-2018-10561, CVE-2014-8361, UPnP SOAP TelnetD command execution, and CVE-2017-17215 exploits.
+The two Mirai variants, namely SORA and UNSTABLE, gain entry through Rasilient PixelStor5000 video surveillance storage systems by exploiting CVE-2020-6756.
+The Mirai variants enter the system by abusing a vulnerability (CVE-2020-6756) in the Rasilient video surveillance storage device.
+The variant exploits CVE-2017-17215 and CVE-2018-10561, resulting in remote code execution (RCE) and unauthorized management of device, respectively.
+Besides CVE-2017-17215 and CVE-2018-10561, UNSTABLE also abuse the ThinkPHP vulnerability. 
+The new Mirai strain targets CVE-2020-9054, a critical flaw that exists in many VPN firewalls and network attached storage (NAS) devices made by Taiwanese vendor Zyxel Communication Corp., which boasts some 100 million devices deployed worldwide.
+Specifically, this variant called Echobot nastyware build tries to exploit, in addition to previously targeted vulnerabilities, CVE-2019-2725 in Oracle WebLogic Server and CVE-2018-6961 in VMware NSX SD-WAN to pressgang more machines into its web.
+Cashdollar found that, beyond the Oracle and VMware exploits, several of the malware's other "new" exploits are, in fact, for vulnerabilities that have been around for nearly a decade, but for one reason or another did not get addressed. These include vulnerabilities in well-known brands such as Linksys (CVE-2009-5157) and Ubiquiti (CVE-2010-5330).
+While most of the Mirai variants target IoT devices, such as home routers and IP cameras, this version of Echobot adds an outstanding exploit for CVE-2019-14927, which targets Mitsubishi Electric‘s Remote Terminal Unit (RTU).
+At the same time, Echobot added four exploits to its arsenal from 2019, while the latest one is from August 2019, targeting Webmin Linux/Unix administration panel (CVE-2019-15107). 
+Mukashi, a new mirai variant takes advantage of a vulnerability (CVE-2020-9054) in Zyxel NAS devices running firmware version 5.21 that allows remote attackers to execute code
+One of the more unusual bugs includes CVE-2019-17270, a remote code execution flaw in the previously mentioned Yachtcontrol webservers, which allow yacht owners to remotely control the functions of their vessels.
+In addition to previously targeted vulnerabilities, Echobot also tires to exploit the CVE-2019-2725 vulnerability in Oracle WebLogic Server and the CVE-2018-6961 vulnerability in VMware NSX SD-WAN to add even more machines to its botnet.
+In terms of exploited vulnerabilities, LiquorBot exploits some critical CVEs (CVE-2015-2051, CVE-2016-1555, CVE-2016-6277) as well as a series of command injection and remote command execution vulnerabilities found in various router models (CVE-2018-17173, CVE-2017-6884, CVE-2018-10562, CVE-2017-6077, CVE-2017-6334, CVE-2016-5679, CVE-2018-9285, CVE-2013-3568, CVE-2019-12780).
+Mirai variant dubbed Asher propagates itself by exploiting the known vulnerabilities CVE-2018-10561, CVE-2018-10562 and CVE-2014-8361.
